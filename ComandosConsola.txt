@@ -61,9 +61,17 @@ Ejercicio 5:
 	cd al directorio raiz
 	
 	Instrucciones para compilar:
-	
+
 		javac -d bin src/level1ex5/Person.java src/level1ex5/Serializer.java src/level1ex5/Deserializer.java src/level1ex5/Main.java
+
 	
 	Instrucciones para ejecutar:
 	
-		java -cp bin level1ex5.Main
+		Serialización:
+			java -cp bin level1ex5.Main serialize Jose 30 person.ser
+			
+		Deserialización:
+		java -cp bin level1ex5.Main deserialize person.ser
+		
+		
+

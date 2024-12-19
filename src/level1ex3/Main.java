@@ -7,16 +7,24 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) {
-		File directory = new File("Test/");
-	    File outputFile = new File("directory_listing.txt");
+		 if (args.length < 2) {
+	            System.out.println("Usage: java Main <directory-path> <output-file>");
+	            return;
+	        }
 
-	    try (FileWriter writer = new FileWriter(outputFile)) {
-	    	DirectoryListerTxt.listDirectoryRecursivelyTxt(directory, writer);
-	        System.out.println("Directory listing written to " + outputFile.getAbsolutePath());
-	    } catch (IOException e) {
-	        System.err.println("An error occurred while writing the file: " + e.getMessage());
+	        String directoryPath = args[0];
+	        String outputFilePath = args[1];
+
+	        File directory = new File(directoryPath);
+	        File outputFile = new File(outputFilePath);
+
+	        try (FileWriter writer = new FileWriter(outputFile)) {
+	            DirectoryListerTxt.listDirectoryRecursivelyTxt(directory, writer);
+	            System.out.println("Directory contents saved to: " + outputFilePath);
+	        } catch (IOException e) {
+	            System.out.println("An error occurred while writing to the file: " + e.getMessage());
+	        }
 	    }
-	}
 }
 
 
