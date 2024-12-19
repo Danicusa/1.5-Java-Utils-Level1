@@ -1,0 +1,69 @@
+Instrucciones para compilar y ejecutar los ejercicios desde la línea de comandos
+
+Ejercicio 1:
+
+		
+	Instrucciones para compilar:
+
+		cd directorio raiz
+		javac -d bin src/level1ex1/DirectoryLister.java src/level1ex1/Main.java
+		
+			// -d bin -> Indica el directorio donde se guardarán los ficheros .class
+			// Los ficheros fuente .java estñan dentro de src/level1ex1
+			
+	Instrucciones para ejecutar:
+		
+		Comando: java -cp bin level1ex1.Main Test/
+		
+					//-cp bin Define el claspath donde se encuentran los ficheros .class
+					// level1ex1.Main es la clase principal que contiene el metodo main
+					// Test/ es la ruta relativa del directorio que se lista
+					
+Ejercicio 2:
+	
+	cd al directorio raiz
+
+	Instrucciones para compilar: 
+	
+		javac -d bin src/level1ex2/DirectoryLister2.java src/level1ex2/Main.java
+		
+	Instrucciones para ejecutar:
+	
+		java -cp bin level1ex2.Main
+
+Ejercicio 3:
+	
+	cd al directorio raiz
+	
+	Instrucciones para compilar:
+	
+		javac -d bin src/level1ex3/DirectoryListerTxt.java src/level1ex3/Main.java
+
+	Instrucciones para ejecutar:
+		
+		java -cp bin level1ex3.Main
+		
+Ejercicio 4:
+	
+	cd al directorio raiz
+	
+	Instrucciones para compilar:
+	
+		javac -d bin src/level1ex4/ReadTxtFile.java src/level1ex4/listDirectoryRecursivelyTxtR.java src/level1ex4/Main.java
+
+		
+	Instrucciones para ejecutar:
+	
+		java -cp bin level1ex4.Main
+
+Ejercicio 5:
+	
+	cd al directorio raiz
+	
+	Instrucciones para compilar:
+	
+		javac -d bin src/level1ex5/Person.java src/level1ex5/Serializer.java src/level1ex5/Deserializer.java src/level1ex5/Main.java
+	
+	Instrucciones para ejecutar:
+	
+		java -cp bin level1ex5.Main
